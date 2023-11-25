@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Coolie</title>
+    <link rel="stylesheet" href="booking.css">
+
+</head>
+<body>
+    <h2 style="text-align: center;">Book a Coolie - Bookings</h2>
+    <form action="process_booking.php" method="post">
+        <label for="pnr">PNR:</label>
+        <input type="text" name="pnr" required>
+
+        <label for="from_location">From Location:</label>
+        <input type="text" name="from_location" required>
+
+        <label for="to_location">To Location:</label>
+        <input type="text" name="to_location" required>
+
+        <label for="num_luggages">Number of Luggages:</label>
+        <input type="number" name="num_luggages" min="0" required>
+
+        <!-- Add input for username -->
+        <label for="username">Username:</label>
+        <input type="text" name="username" required>
+
+        <!-- Calculate the amount as 20 times the number of luggages -->
+        <label>Amount: $<span id="amount">0</span></label>
+
+        <button type="button" onclick="calculateAmount()">Calculate Amount</button>
+        <button type="submit">Book Coolie</button>
+    </form>
+
+    <script>
+        function calculateAmount() {
+            var numLuggages = document.querySelector('input[name="num_luggages"]').value;
+            var amount = 20 * numLuggages;
+
+            document.getElementById('amount').textContent = amount;
+        }
+
+        function finishJob() {
+        // You may want to implement additional confirmation logic before sending the request to finish the job
+        var confirmation = confirm("Are you sure you want to finish the job?");
+        
+        if (confirmation) {
+            // Assuming you want to redirect to a new PHP script for finishing the job
+            window.location.href = "finish_job.php";
+        }
+    }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+

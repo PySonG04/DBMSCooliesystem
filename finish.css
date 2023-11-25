@@ -1,0 +1,52 @@
+/* Your CSS styles for finish_job.php */
+/* Your CSS styles for finish_job.php */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.job-finished {
+    text-align: center;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-finished h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.job-finished p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.logout-btn {
+    background-color: #ee150a;
+    margin-top: 15px;
+    padding: 15px;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.logout-btn:hover {
+    background-color: #006400;
+    cursor: pointer;
+    transform: scale(1.05);
+}

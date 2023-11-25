@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coolie System</title>
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Welcome to Coolie Wala</h1>
+        <div class="card">
+            <a href="login.php">
+                <div class="card-content">
+                    <h2>User Login</h2>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="coolie_login.html">
+                <div class="card-content">
+                    <h2>Coolie Login</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- <script src="homepage2.js"></script> -->
+
+    <script>
+        document.querySelector(".card a[href='login.php']").addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default link behavior
+            window.location.href = "login.php"; // Redirect to user login page
+        });
+    </script>
+</body>
+</html>
+

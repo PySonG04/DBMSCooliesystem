@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Coolie Waale</title>
+    <link rel="stylesheet" type="text/css" href="userlogin.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">User Login</h1>
+        <form id="login-form" method="post" action="booking.html">
+            <div class="form-group">
+                <input type="text" id="username" name="username" placeholder="User ID" class="input-field" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="Password" class="input-field" required>
+            </div>
+            <?php if (isset($login_error)) { ?>
+                <p class="error-message"><?php echo $login_error; ?></p>
+            <?php } ?>
+            <button type="submit" class="login-button">Login</button>
+        </form>
+
+        <p class="register-link">Are you new? <a href="registration.html">Register</a></p>
+    </div>
+    <script>
+        document.getElementById("register-link").addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default link behavior
+            window.location.href = "registration.html"; // Redirect to the registration page
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+

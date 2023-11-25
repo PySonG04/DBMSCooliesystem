@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login - Coolie Waale</title>
+    <link rel="stylesheet" type="text/css" href="userlogin.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">User Login</h1>
+        <div class="login-form">
+            <input type="text" placeholder="User ID" class="input-field">
+            <input type="password" placeholder="Password" class="input-field">
+            <button class="login-button">Login</button>
+        </div>
+        <p class="register-link">Are you new? <a href="registration.html">Register</a></p>
+    </div>
+
+    <script>
+        document.getElementById("register-link").addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default link behavior
+            window.location.href = "registration.html"; // Redirect to the registration page
+        });
+    </script>
+</body>
+</html>

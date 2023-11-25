@@ -1,0 +1,72 @@
+/* userlogin.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2; /* Light gray background */
+    color: #333; /* Dark gray text color */
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.heading {
+    color: #ff0000; /* Red heading color */
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 300px;
+    height: 150px;
+    margin: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly more pronounced box shadow on hover */
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #fff, #eee); /* Gradient background */
+}
+
+.card a {
+    text-decoration: none;
+    color: #333; /* Dark gray text color for links */
+}
+
+.card h2 {
+    margin: 0;
+}
+
+#userLoginCard {
+    background: linear-gradient(to bottom, #ff4d4d, #ff1a1a); /* Red gradient background for User Login card */
+}
+
+#coolieLoginCard {
+    background: linear-gradient(to bottom, #333, #000); /* Dark gradient background for Coolie Login card */
+    color: #fff; /* White text color for Coolie Login card */
+}
+
+/* Add images of coolies as background for the cards */
+#userLoginCard {
+    background: url('coolie1.jpg') center/cover no-repeat;
+}
+
+#coolieLoginCard {
+    background: url('C:\xampp\htdocs\DBMSProject\coolie1.jpg') center/cover no-repeat;
+}
+
+
+
